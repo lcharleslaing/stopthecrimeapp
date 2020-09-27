@@ -1,9 +1,7 @@
 {
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "app.sass"
-    ],
-    "names": [],
-    "file": "app.css"
+"version": 3,
+"mappings": "AA0UA;;;;GAIG;AAhOD,yBAAiB;ECzGf,cAAU;IACR,OAAO,EAAE,IAAI;ADwGjB,yBAAiB;ECpGf,cAAU;IACR,OAAO,EAAE,IAAI;ADmGjB,yBAAiB;EC/Ff,iBAAa;IACX,OAAO,EAAE,IAAI",
+"sources": ["breakpoints.scss","app.scss"],
+"names": [],
+"file": "app.css"
 }

@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=app.css.map */
+/**
+*
+* Testing
+*
+**/
+@media (max-width: 375px) {
+  body .top-tabs {
+    display: none; } }
+@media (max-width: 768px) {
+  body .top-tabs {
+    display: none; } }
+@media (min-width: 769px) {
+  body .bottom-tabs {
+    display: none; } }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,20 @@
+// app global css in Sass form
+@import "./breakpoints.scss";
+
+body {
+  @include media('<=phone') {
+    .top-tabs {
+      display: none;
+    }
+  }
+  @include media('<=tablet') {
+    .top-tabs {
+      display: none;
+    }
+  }
+  @include media('>tablet') {
+    .bottom-tabs {
+      display: none;
+    }
+  }
+}

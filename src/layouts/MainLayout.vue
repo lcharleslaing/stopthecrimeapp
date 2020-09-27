@@ -9,25 +9,23 @@
           <q-avatar>
             <img src="stopsign.png">
           </q-avatar>
-          the Crime
+          the Crime®
         </q-toolbar-title>
 
         <q-btn dense flat round icon="menu" @click="right = !right"/>
       </q-toolbar>
 
-      <q-tabs align="left">
-        <q-route-tab to="/page1" label="Page One"/>
-        <q-route-tab to="/page2" label="Page Two"/>
-        <q-route-tab to="/page3" label="Page Three"/>
-      </q-tabs>
+      <Links class="top-tabs" />
     </q-header>
 
     <q-drawer v-model="left" side="left" overlay behavior="mobile" bordered>
       <!-- drawer content -->
+      <ExternalLinks/>
     </q-drawer>
 
     <q-drawer v-model="right" side="right" overlay behavior="mobile" bordered>
       <!-- drawer content -->
+      <SourceLinks/>
     </q-drawer>
 
     <q-page-container>
@@ -39,23 +37,30 @@
     </q-page-container>
 
     <q-footer reveal bordered class="bg-dark text-white">
-      <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="stopsign.png">
-          </q-avatar>
-          the Crime
-        </q-toolbar-title>
-      </q-toolbar>
+      <Links class="bottom-tabs"/>
     </q-footer>
 
   </q-layout>
 </template>
 
 <script>
+import Links from '../components/links/links'
+import ExternalLinks from '../components/links/external_links'
+import SourceLinks from '../components/links/source_doc_links'
+import {mapGetters} from 'vuex'
+
 export default {
+  components: {
+    Links,
+    ExternalLinks,
+    SourceLinks
+  },
+  computed: {
+    ...mapGetters("links", ['links'])
+  },
   data() {
     return {
+      tab: '',
       left: false,
       right: false
     }
