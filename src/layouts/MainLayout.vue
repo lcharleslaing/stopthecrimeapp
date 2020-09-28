@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Links from '../components/links/links'
+import Links from '../store/modules/links.js'
 import ExternalLinks from '../components/links/external_links'
 import SourceLinks from '../components/links/source_doc_links'
 import {mapGetters} from 'vuex'

@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AA0UA;;;;GAIG;AAhOD,yBAAiB;ECzGf,cAAU;IACR,OAAO,EAAE,IAAI;ADwGjB,yBAAiB;ECpGf,cAAU;IACR,OAAO,EAAE,IAAI;ADmGjB,yBAAiB;EC/Ff,iBAAa;IACX,OAAO,EAAE,IAAI",
-"sources": ["breakpoints.scss","app.scss"],
+"mappings": "AA0UA;;;;GAIG;AAhOD,yBAAiB;ECzGf,cAAS;IACP,OAAO,EAAE,IAAI;ADwGjB,yBAAiB;ECpGf,cAAS;IACP,OAAO,EAAE,IAAI;ADmGjB,yBAAiB;EC/Ff,iBAAY;IACV,OAAO,EAAE,IAAI",
+"sources": ["breakpoints.scss","app.sass"],
 "names": [],
 "file": "app.css"
 }

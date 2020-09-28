@@ -1,32 +1,19 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import links from './links'
 
 
-// import example from './module-example'
+import articles from './modules/articles'
+import todos from './modules/todos'
+import links from './modules/links'
 
+// Load Vuex
 Vue.use(Vuex)
 
-/*
- * If not building with SSR mode, you can
- * directly export the Store instantiation;
- *
- * The function below can be async too; either use
- * async/await or return a Promise which resolves
- * with the Store instance.
- */
-
-export default function (/* { ssrContext } */) {
-  const Store = new Vuex.Store({
-    modules: {
-      // Example
-      links
-    },
-
-    // enable strict mode (adds overhead!)
-    // for dev mode only
-    strict: process.env.DEV
-  })
-
-  return Store
-}
+// Create Store
+export default new Vuex.Store({
+  modules: {
+    articles,
+    todos,
+    links
+  }
+})
